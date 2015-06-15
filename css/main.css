@@ -1,0 +1,323 @@
+/* CSS FOR MAIN SECTION */
+
+/* Tags */
+header nav {
+	 position: fixed;
+	 top: 0;
+	 width: 100%
+}
+header nav ul  {
+	list-style-type: none;
+	background-color: rgba(255, 126, 0, 0.85);
+	display: block;
+	float:right;
+	line-height:2em;
+	margin: 0;
+	height: 2.5em;
+	width:100%;
+	text-align:right;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	padding: .3em 1.2em;
+}
+
+a:hover {
+	color: rgb(0,0,0);
+}
+nav ul li {
+	display:inline;
+}
+
+body {
+	background-color: rgb(123,123,123);
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+}
+
+
+footer {
+	background-color: rgba(255, 126, 0, 0.85);
+	width:100%;
+	height:25px;
+	position: fixed;
+	bottom:0;
+	color:white;
+	right: 0;
+	margin-top: 1em;
+}
+
+button {
+	margin-bottom: 1em;
+}
+textarea {
+	width:30.6em !important;
+	height:10em;
+	margin-bottom: 1em;
+}
+
+/* Ids */
+#mainWrapper {
+	width:100%;
+	margin-top: 4em;
+}
+#contentWrapper {
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+#smallImages {
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	height: 200px;
+}
+
+#logo {
+	float:left;
+}
+#mainImage {
+	width: 50em;
+	height: 20em;
+	color: white;
+	text-align:center;
+	margin-top: 4em;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#bigImage {
+	 width: 800px;
+	 height: 320px;
+	 border-radius: 10px;
+	 border: 2px solid rgba(255,126,0,0.85);
+}
+
+#smallImage {
+	width: 25%;
+	color: white;
+	margin-top: 2em;
+	text-align: center;
+	float: left;
+	margin-top: 2em;
+	margin-left: 3.5em;
+	margin-bottom: 1em;
+}
+section #list a {
+	text-decoration: none;
+	color:white;
+}
+#list ul {
+	list-style-type: none;
+}
+#list {
+	color: white;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+	float:left;
+	padding-left: 40px;
+}
+
+#location {
+	float:right;
+}
+
+#conventions {
+	margin-right: 40px;
+}
+
+#copy {
+	float:left !important;
+}	
+
+#convention {
+    float: left;
+    background-color: black;
+    width: 82%;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    color: white;
+	background-color:rgba(36,36,36,0.76);
+	margin-left: 08%;
+	border-radius: 5px;
+	border: 2px solid orange;
+}
+
+#QA {
+	float:left;
+	background-color:rgba(36,36,36,0.76);
+	border-radius:5px;
+	border: 2px solid orange;
+	margin-bottom: 2em;
+	padding: 5px;
+}
+
+
+#About {
+	float:left;
+	margin-bottom: 2em;
+	background-color:rgba(36,36,36,0.76);
+	color:white;
+	border-radius: 5px;
+	border: 2px solid orange;
+	padding: 8px;
+
+}
+
+#Contact {
+	float:left;
+	margin-bottom: 2em;
+	background-color:rgba(36,36,36,0.76);
+	color: white;
+	border-radius: 5px;
+	padding:8px;
+	border: 2px solid orange;
+
+}
+
+/* Classes */
+
+.trippleImage {
+	width: 225px;
+	height: 160px;
+	border-radius: 10px;
+	border: 2px solid rgba(255, 126, 0, 0.85);
+}
+
+.caption {
+	font-size:14px;
+	line-height: normal;
+	border-radius: 5px;
+	background-color: rgba(36,36,36,0.76);
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 2px solid rgba(255, 126, 0, 0.85);
+}
+.caption a {
+	font-weight:bold;
+}
+.caption a:hover {
+	color:rgb(235, 125, 18); 
+}
+
+
+.inputForm {
+	  font-size: 2em;
+	  text-align: center;
+	  border-radius: 7px;
+	  border: 2px solid orange;
+	  display: block;
+	  margin-top: 1em;
+	  margin-left: 15px;
+	  margin-right: auto;
+	  float:left;
+	  text-align: left;
+}
+.right {
+	float:right;
+	margin-right: 25px;
+}
+.inputForm:hover {
+	border-color: black;
+}
+
+.inputSubmit {
+	float:right;
+	margin-left: 4.5em;
+}
+
+.panel  {
+	color: rgb(255,255,255);
+	background-color:rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+	margin-bottom: 0;
+	border-radius: 5px;
+	text-align: center;
+	border: 2px solid orange;
+}
+.panel:hover {
+	color: rgb(235, 125, 18);
+	border-color: rgb(235, 125, 18);
+}
+
+.pannelData {
+	margin: 0;
+	background-color:rgba(36,36,36,0.76);
+	margin-bottom:  2em;
+	border-radius: 5px;
+	border: 1px solid orange;
+	padding: 08px;
+	margin-top: 2px;
+	align-content:center;
+}
+
+.footerSmall {
+	float:right;
+	margin-left: 1em;
+	text-align: center;
+}
+
+.conventionNav {
+	width: 10%;
+	float: left;
+	margin: 0;
+}
+.conventionNav a {
+	cursor: pointer;
+}
+.conventionNav a:hover {
+	color: rgb(235, 125, 18);
+}
+ .vertical {
+	width:0px;
+	height: 08em;
+	float: left;
+}
+.conventionData {
+	float:left;
+	padding: 10px;
+	width: 650px;
+}
+
+.active {
+	color: orange;
+}
+
+.competitionTitle {
+	margin-right: auto;
+	margin-left: auto;
+	color:white;
+	text-align: center;
+	font-size:25pt;
+	text-decoration: underline;
+}
+
+
+.title {
+	color:white;
+	text-decoration: underline;
+	text-align:center;
+	font-size: 25pt;
+}
+
+.success {
+	border-radius: 10px;
+	background-color: rgba(3,216,3,0.60);
+	color:white;
+	float:right;
+	padding: 10px 30px;
+	display:none;
+}
+.successQA {
+	border-radius: 10px;
+	background-color: rgba(3,216,3,0.60);
+	color:white;
+	float:right;
+	padding: 10px 30px;
+	display:none;
+}

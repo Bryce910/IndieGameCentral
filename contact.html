@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>IndieGameCentral</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+</head>
+<header>
+	<nav>
+		<ul>
+			<li id="logo"><a href="index.html" class="menu">Main</a> </li>
+			<li><a href="#conventions" class="menu">Conventions</a> </li>
+			<li><a href="#" class="menu">Competitions</a> </li>
+			<li><a href="#" class="menu">About</a> </li>
+			<li><a href="#contactForm" class="menu">Contact</a> </li>
+		</ul>
+	</nav>
+</header>
+<body>
+
+	<section id="mainImage">
+		Fill in Image
+	</section>
+
+	<address>
+		<div id="location">
+			good data
+		</div>
+		
+		<div id="contactForm">
+			<input type="email" placeholder="Email" name="email" class="inputForm" required="yes">
+			<textarea name="messages" class="inputForm inputFormTextarea" placeholder="Enter Message!"></textarea>
+			<button class="inputForm" name="submit">Send</button>
+		</div>
+	
+	</address>
+	<footer>
+		data will go here...
+	</footer>
+</body>
+
+</html>
+<script>
+$(document).ready(function()
+{
+	$('.panel').click(function()
+	{
+		$(this).parent().children().closest('.pannelData').toggle();
+	});
+});
+</script>
