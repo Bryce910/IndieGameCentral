@@ -18,4 +18,22 @@ function check_login($userName, $password)
 		return "Invalid User";
 	}
 }
+
+function register_user($email, $password)
+{
+	//lets add some code to register user
+	$stmt = $db->prepare("INSERT INTO user (email, password) VALUES (:email, :password)");
+	$stmt->execute(array(':email'=> $email, ':password'=> $pasword));
+	$rowCount  = $stmt->rowCount();
+	if($rowCount)
+	{
+		// Success
+		//	set session data and etc.
+	}
+	else 
+	{
+		//Failed
+		return "Error, please try again!";
+	}
+}
 ?>

@@ -13,8 +13,10 @@ function verifyAuthenic()
 	}
 }
 
-function loadView()
+function loadView($fileName)
 {
-	
+	// File path to load required section
+	$viewpath = "/view/" . $fileName . ".view.php";
+	include($viewpath);
 }
 ?>

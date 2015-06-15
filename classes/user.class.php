@@ -9,8 +9,9 @@ class User
 	public $lastName;
 	public $address;
 	public $email;
+	public $password;
 	public $role;
-	
+	public $banned;
 	
 	function__construct($id)
 	{
@@ -27,7 +28,9 @@ class User
 			$this->lastName = $user[0]['lastName'];
 			$this->address = $user[0]['address'];
 			$this->email = $user[0]['email'];
+			$this->password = $user[0]['password'];
 			$this->type = $user[0]['role'];
+			$this->banned =$user[0]['banned'];
 
 		}
 	}
