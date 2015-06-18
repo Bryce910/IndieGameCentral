@@ -7,7 +7,7 @@ function verifyAuthenic()
 		// no way!
 		header("location: index.php");
 	}
-	else 
+	else
 	{
 		// do nothing... cause you are good to go!
 	}
@@ -16,7 +16,7 @@ function verifyAuthenic()
 function loadView($fileName)
 {
 	// File path to load required section
-	$viewpath = "/view/" . $fileName . ".view.php";
+	$viewpath = "view/" . $fileName . ".view.php";
 	include($viewpath);
 }
 ?>

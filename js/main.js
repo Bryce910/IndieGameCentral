@@ -1,10 +1,9 @@
-<script>
 $(document).ready(function() {
 	$('.pannelData').toggle();
 	$('.comp-2').toggle();
 	$('.comp-3').toggle();
 	$('.comp-4').toggle();
-	
+
 	$('.panel').click(function() {
 		$(this).parent().children().closest('.pannelData').toggle();
 	});
@@ -13,18 +12,18 @@ $(document).ready(function() {
 		$(this).parent().children().closest('form').toggle();
 	});
 	$('.cnav').click(function() 	{
-	
+
 		var id = $(this).attr('id');
 
 		$(this).toggleClass("active");
 		$('.comp-'+id).toggle();
-	
+
 	});
 	$('#contactus input[name=Csend]').click(function() {
 		var emailData = $('#contactus input[name=Cemail]').val();
 		var nameData = $('#contactus input[name=Cname]').val();
 		var messageData = $('#contactus input[name=Cname]').val();
-		
+
 		if(emailData === "" || nameData === "" || messageData === "") {
 		 //return false;
 		}
@@ -48,5 +47,65 @@ $(document).ready(function() {
 			$('.successQA').toggle();
 		}
 	});
+
+	loginBox = $('#login-form').dialog({
+		autoOpen: false,
+		height: 300,
+		width: 350,
+		modal: true,
+		buttons: {
+			"Login": loginUser
+		},
+
+	});
+
+	registerBox = $('#register-form').dialog({
+		autoOpen: false,
+		height: 350,
+		width: 450,
+		modal: true,
+		buttons: {
+			"Register": registerUser,
+		},
+		my: "center",
+         at: "center",
+         of: window
+	});
+	function registerUser()
+	{
+
+
+		var formData = $('#registerForm').serializeArray();
+		formData.push({name: 'type', value: 'register'});
+
+		var dataPost = $.post('classes/login.php', formData ,function (data)
+		{
+
+		});
+	};
+	function loginUser()
+	{
+		var formData = $('#loginForm').serializeArray();
+		formData.push({name: 'type', value: 'login'});
+		var dataPost = $.post("classes/login.php", formData, function (data)
+		{
+					console.log(data);
+		});
+
+	}
+	$('#login').on('click', function()
+	{
+		event.preventDefault();
+		registerBox.dialog("close");
+		loginBox.dialog("open");
+	});
+	$('#register').on('click', function()
+	{
+		event.preventDefault();
+		loginBox.dialog("close");
+		registerBox.dialog("open");
+	});
+	$('.ui-button-text').each(function(i){
+				$(this).html($(this).parent().attr('text'))
+			})
 });
-</script>

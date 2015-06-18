@@ -16,6 +16,7 @@ function verifyAuthenic()
 function loadView($fileName)
 {
 	// File path to load required section
+	$viewpath = "/xampp/IndieGameCentral/view/" . $fileName . ".view.php";
 	include($viewpath);
 }
 ?>

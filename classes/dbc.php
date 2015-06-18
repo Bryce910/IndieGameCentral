@@ -1,8 +1,7 @@
 <?php
-$user = "";
+$user = "root";
 $pass = "";
 
-$db = new PDO("mysql:host=localhost;dbname=indie;", $pass, $user);
+ global $db;
+ $db = new PDO("mysql:host=localhost;dbname=indiegamecentral;", $user, $pass);
 ?>
-
-
