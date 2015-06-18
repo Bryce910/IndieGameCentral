@@ -1,9 +1,9 @@
 <?php
-
 /* This will be the user class system we build for our members */
 
 class User
 {
+
 	public $id;
 	public $firstName;
 	public $lastName;
@@ -12,8 +12,8 @@ class User
 	public $password;
 	public $role;
 	public $banned;
-	
-	function__construct($id)
+
+	function __construct($id)
 	{
 		if($id == null)
 		{
@@ -21,20 +21,26 @@ class User
 		}
 		else
 		{
+			$user = "root";
+			$pass = "";
+
+			 global $db;
+			 $db = new PDO("mysql:host=localhost;dbname=indiegamecentral;", $user, $pass);
+
 			$stmt = $db->prepare("SELECT * FROM user WHERE id=:id");
 			$stmt->execute(array(':id'=>$id));
 			$user = $stmt->fetch(PDO::FETCH_OBJ);
-			$this->firstName = $user[0]['firstName'];
-			$this->lastName = $user[0]['lastName'];
-			$this->address = $user[0]['address'];
-			$this->email = $user[0]['email'];
-			$this->password = $user[0]['password'];
-			$this->type = $user[0]['role'];
-			$this->banned =$user[0]['banned'];
+			$this->firstName = $user->firstName;
+			$this->lastName = $user->lastName;
+			$this->address = $user->address;
+			$this->email = $user->email;
+			$this->password = $user->password;
+			$this->type = $user->role;
+			$this->banned =$user->banned;
 
 		}
 	}
-	
+
 }
 
 ?>

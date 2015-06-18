@@ -7,4 +7,3 @@
 		<section class="footerSmall"><a href="">Conventions</a></section>
 		<section class="footerSmall"><a href="">QA</a></section>
 </footer>
-

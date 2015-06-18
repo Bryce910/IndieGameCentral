@@ -1,24 +1,23 @@
 <?php
-//db connected 
+//db connected
 require "dbc.php";
 require "generalFunctions.php";
 require "user.class.php";
-
+require "convention.class.php";
+require "competition.class.php";
  $user = new User($_SESSION['user']);
- 
- loadView("header.view.php");
- 
+
+ loadView("header.php");
+
  if($user->role == "admin")
  {
-	 loadView("admin.view.php")
+	 loadView("admin")
  }
  else if($user->role == "level1")
  {
-	 loadView("level1.view.php");
+	 loadView("level1");
  }
 
 loadView("footer.view.php");
 
 ?>
-
-

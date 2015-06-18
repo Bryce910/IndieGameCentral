@@ -10,9 +10,9 @@ class User
 	public $address;
 	public $email;
 	public $role;
-	
-	
-	function__construct($id)
+
+
+	function __construct($id)
 	{
 		if($id == null)
 		{
@@ -31,7 +31,7 @@ class User
 
 		}
 	}
-	
+
 }
 
 ?>

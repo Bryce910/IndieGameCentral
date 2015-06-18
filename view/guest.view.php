@@ -1,50 +1,23 @@
-<!DOCTYPE html>
-<!-- Joystick
-<div>Icons made by <a href="http://www.flaticon.com/authors/tutsplus" title="TutsPlus">TutsPlus</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
--->
-<html>
-<head>
-<title>IndieGameCentral</title>
-<meta name="description" content="Indie Game conventions and competitions">
-<meta name="keywords" content="indie game, game conventions, game competitions, indie game competitions, indie game conventions, indie, games">
-<meta name="author" content="RadLab - Bryce Moral">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-</head>
-<header>
-<!-- Navigation menu -->
-	<nav>
-		<ul>
-			<li><a href="#" class="menu" id="logo"><img src="images/logo.png" alt="logo"></a>
-			<li><a href="#conventions" class="menu">Conventions</a> </li>
-			<li><a href="#competitionTitle" class="menu">Competitions</a> </li>
-						<li><a href="#QA" class="menu">QA</a> </li>
-			<li><a href="#about" class="menu">About</a> </li>
-			<li><a href="#ex" class="menu" id="contact">Contact</a> </li>
-		</ul>
-	</nav>
-</header>
 <body>
 	<div id="mainWrapper">
 		<div id="contentWrapper">
 		<!-- Main Image -->
 			<section id="mainImage">
-				<img src="images/bigimage.jpg" alt="BigImage" id="bigImage"> 
+				<img src="images/bigimage.jpg" alt="BigImage" id="bigImage">
 			</section>
 		<!-- Small Images  and Captions -->
-	<div id="smallImages">	
+	<div id="smallImages">
 				<section id="smallImage">
 					<img src="images/smallimg1.jpg" alt="SmallImage" class="trippleImage">
-					<p class ="caption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  <a href="#">read more</a> </p>				
+					<p class ="caption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  <a href="#">read more</a> </p>
 				</section>
 				<section id="smallImage">
-				<img src="images/smallimg2.png" alt="SmallImage" class="trippleImage"> 
-				<p class ="caption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  <a href="#">read more</a> </p>		
+				<img src="images/smallimg2.png" alt="SmallImage" class="trippleImage">
+				<p class ="caption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  <a href="#">read more</a> </p>
 				</section>
 				<section id="smallImage">
-					<img src="images/smallimg3.jpg" alt="SmallImage" class="trippleImage"> 
-					<p class ="caption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  <a href="#">read more</a> </p>		
+					<img src="images/smallimg3.jpg" alt="SmallImage" class="trippleImage">
+					<p class ="caption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  <a href="#">read more</a> </p>
 				</section>
 		</div>
 			<section id="list">
@@ -86,7 +59,7 @@
 					 <span class="comp-2">data here </span>
 					 <span class="comp-3">data here </span>
 
-					</div>							
+					</div>
 		</section>
 			<!-- Quality Insurance Form -->
 		<section id="QA">
@@ -104,13 +77,13 @@
 			<option value="android">android</option>
 		</select>
 		<input type="number" step="10" name="QAbudget" class="inputForm" placeholder="Budget">
-		<input type="text"  class="inputForm" placeholder="Start Date" name="QAdate"> 
+		<input type="text"  class="inputForm" placeholder="Start Date" name="QAdate">
 		<span class="inputSubmit"><input type="button" class="inputForm right"  value="Send!" name="QAsend"></span>
 		</form>
 		</section>
 		<!-- About Section -->
 		<section id="About">
-		
+
 		<h2 class="title"> About Us </h2>
 				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 		</section>
@@ -126,64 +99,11 @@
 		</section>
 		</div>
 	</div>
+
+  <div id="login-form" title="Login" style="display:none">
+    <?php loadView("login"); ?>
+  </div>
+  <div id="register-form" title="Register" style="display:none">
+    <?php loadView("register"); ?>
+  </div>
 </body>
-
-<!-- Footer -->
-<footer>
-		<section class="footerSmall" id="copy">RadLab &copy; 2015 </section>
-		<section class="footerSmall"><a href="">Contact</a></section>
-		<section class="footerSmall"><a hef="">About</a></section>
-		<section class="footerSmall"><a href="">Competitions</a></section>
-		<section class="footerSmall"><a href="">Conventions</a></section>
-		<section class="footerSmall"><a href="">QA</a></section>
-</footer>
-</html>
-<script>
-$(document).ready(function() {
-	$('.pannelData').toggle();
-	$('.comp-2').toggle();
-	$('.comp-3').toggle();
-	$('.comp-4').toggle();
-	
-	$('.panel').click(function() {
-		$(this).parent().children().closest('.pannelData').toggle();
-	});
-
-	$('.cnav').click(function() 	{
-	
-		var id = $(this).attr('id');
-
-		$(this).toggleClass("active");
-		$('.comp-'+id).toggle();
-	
-	});
-	$('#contactus input[name=Csend]').click(function() {
-		var emailData = $('#contactus input[name=Cemail]').val();
-		var nameData = $('#contactus input[name=Cname]').val();
-		var messageData = $('#contactus input[name=Cname]').val();
-		
-		if(emailData === "" || nameData === "" || messageData === "") {
-		 //return false;
-		}
-		else {
-		$.post("contact.php", { email: emailData, name: nameData, message: messageData});
-		$('.success').toggle();
-		}
-	});
-	$('#qaForm input[name=QAsend]').click(function() {
-		var empty = false;
-		$('#qaForm :input').each(function() {
-			if($(this).val() === "")	{
-				empty = true;
-			}
-		});
-		if(empty) {
-			// fail
-		}
-		else {
-			$.post("qa.php", $('#qaForm').serialize() );
-			$('.successQA').toggle();
-		}
-	});
-});
-</script>

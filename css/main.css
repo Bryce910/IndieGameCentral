@@ -133,7 +133,7 @@ section #list a {
 
 #copy {
 	float:left !important;
-}	
+}
 
 #convention {
     float: left;
@@ -179,7 +179,8 @@ section #list a {
 	border: 2px solid orange;
 
 }
-
+#register-form {
+}
 /* Classes */
 
 .trippleImage {
@@ -202,7 +203,7 @@ section #list a {
 	font-weight:bold;
 }
 .caption a:hover {
-	color:rgb(235, 125, 18); 
+	color:rgb(235, 125, 18);
 }
 
 

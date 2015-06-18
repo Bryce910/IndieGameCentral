@@ -1,0 +1,11 @@
+#Todo
++ Create user table
++ Create competition table
++ Create convention table
+/ Convention Class
+/ Competition Class
+- register
+- login
++ fix php errors
+
+crt + alt + c = color picker
