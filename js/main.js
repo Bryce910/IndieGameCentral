@@ -73,8 +73,6 @@ $(document).ready(function() {
 	});
 	function registerUser()
 	{
-
-
 		var formData = $('#registerForm').serializeArray();
 		formData.push({name: 'type', value: 'register'});
 
@@ -93,6 +91,26 @@ $(document).ready(function() {
 		});
 
 	}
+	$('#addConvention').on('click', function()
+	{
+
+			var formData = $('#AddConventionForm').serializeArray();
+			formData.push({name: 'type', value: 'add'});
+			console.log(formData);
+			var dataPost = $.post('classes/conventionFunctions.php', formData, function(data)
+			{
+				console.log(data);
+			});
+	});
+	$('#addCompetition').on('click', function()
+	{
+			var formData = $('#AddCompetitionForm').serializeArray();
+			formData.push({name:'type', value: 'add'});
+			var dataPost = $.post('classes/competitionFunctions.php', formData, function(data)
+			{
+				console.log(data);
+			});
+	});
 	$('#login').on('click', function()
 	{
 		event.preventDefault();
