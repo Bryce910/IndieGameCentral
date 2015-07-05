@@ -7,8 +7,10 @@ $(document).ready(function() {
 	$('.panel').click(function() {
 		$(this).parent().children().closest('.pannelData').toggle();
 	});
-	$('.title').click(function()
-	{
+	$('.title').click(function() {
+		$(this).parent().children().closest('form').toggle();
+	});
+	$('.userTitle').click(function() {
 		$(this).parent().children().closest('form').toggle();
 	});
 	$('.cnav').click(function() 	{
@@ -71,29 +73,9 @@ $(document).ready(function() {
          at: "center",
          of: window
 	});
-	function registerUser()
-	{
-		var formData = $('#registerForm').serializeArray();
-		formData.push({name: 'type', value: 'register'});
 
-		var dataPost = $.post('classes/login.php', formData ,function (data)
-		{
-
-		});
-	};
-	function loginUser()
-	{
-		var formData = $('#loginForm').serializeArray();
-		formData.push({name: 'type', value: 'login'});
-		var dataPost = $.post("classes/login.php", formData, function (data)
-		{
-					console.log(data);
-		});
-
-	}
 	$('#addConvention').on('click', function()
 	{
-
 			var formData = $('#AddConventionForm').serializeArray();
 			formData.push({name: 'type', value: 'add'});
 			console.log(formData);
@@ -127,3 +109,29 @@ $(document).ready(function() {
 				$(this).html($(this).parent().attr('text'))
 			})
 });
+
+
+
+function registerUser()
+{
+	$('.ui-button-text').on('click', function() {
+		var formData = $('#registerForm').serializeArray();
+		formData.push({name: 'type', value: 'register'});
+
+		var dataPost = $.post('classes/login.php', formData ,function (data)
+		{
+
+		});
+	});
+};
+function loginUser()
+{
+		$('.ui-button-text').on('click', function() {
+		var formData = $('#loginForm').serializeArray();
+		formData.push({name: 'type', value: 'login'});
+		var dataPost = $.post("classes/login.php", formData, function (data)
+		{
+					console.log(data);
+		});
+	});
+}

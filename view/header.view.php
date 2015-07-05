@@ -19,13 +19,24 @@
 	<nav>
 		<ul>
 			<li><a href="#" class="menu" id="logo"><img src="images/logo.png" alt="logo"></a>
-			<li><a href="#conventions" class="menu">Conventions</a> </li>
-			<li><a href="#competitionTitle" class="menu">Competitions</a> </li>
-						<li><a href="#QA" class="menu">QA</a> </li>
-			<li><a href="#about" class="menu">About</a> </li>
-			<li><a href="#ex" class="menu" id="contact">Contact</a> </li>
-			<li><a href="javascript:{}" class="menu" id="login">Login</a></li>
-			<li><a href="javascript:{}" class="menu" id="register">Register</a></li>
+			<?php if(isset($_SESSION['user']))
+			 		{ ?>
+				<li><a href="convention.php" class="menu">Conventions</a> </li>
+				<li><a href="competition.php" class="menu">Competitions</a> </li>
+				<li><a href="quality.php" class="menu">QA</a> </li>
+				<li><a href="javascript:{}" class="menu" id="account">Account</a></li>
+				<li><a href="logout.php" class="menu" id="logout">Logout</a></li>
+		<?php  }
+			else { ?>
+				<li><a href="#conventions" class="menu">Conventions</a> </li>
+				<li><a href="#competitionTitle" class="menu">Competitions</a> </li>
+				<li><a href="#QA" class="menu">QA</a> </li>
+				<li><a href="#about" class="menu">About</a> </li>
+				<li><a href="#ex" class="menu" id="contact">Contact</a> </li>
+				<a href="indieresource.php">Resources</a>
+				<li><a href="javascript:{}" class="menu" id="login">Login</a></li>
+				<li><a href="javascript:{}" class="menu" id="register">Register</a></li>
+	<?php 	} ?>
 		</ul>
 	</nav>
 </header>
