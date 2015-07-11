@@ -8,11 +8,11 @@ $endDate = $_POST['CompetitionEnd'];
 
 function addCompetition($title, $data, $time, $length)
 {
-	$user = "root";
-	$pass = "";
+	$user = "indiegamecentral";
+	$pass = "Asdf72389adlkjp!";
 
 	 global $db;
-	 $db = new PDO("mysql:host=localhost;dbname=indiegamecentral;", $user, $pass);
+	 $db = new PDO("mysql:host=indiegamecentralcom.ipagemysql.com;dbname=indiegamecentral;", $user, $pass);
 	$stmt = $db->prepare("INSERT INTO competition (title,data, startDate, length) VALUES (:title, :details, :startDate, :length)");
 	$rows_affected = $stmt->execute(array(':title'=> $title, ':details'=> $data, ':startDate' => $time, ':length'=>$length));
 	if($rows_affected)

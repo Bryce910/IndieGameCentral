@@ -8,11 +8,11 @@ $EndDate = $_POST['ConventionEnd'];
 
 function addConvention($title, $data, $Startdate, $EndDate)
 {
-	$user = "root";
-	$pass = "";
+	$user = "indiegamecentral";
+	$pass = "Asdf72389adlkjp!";
 
 	 global $db;
-	 $db = new PDO("mysql:host=localhost;dbname=indiegamecentral;", $user, $pass);
+	 $db = new PDO("mysql:host=indiegamecentralcom.ipagemysql.com;dbname=indie_central_2015;", $user, $pass);
 	$stmt = $db->prepare("INSERT INTO convention (title,details, startDate, endDate) VALUES (:title, :details, :startDate, :endDate)");
 	$rows_affected = $stmt->execute(array(':title'=> $title, ':details'=> $data, ':startDate' => $Startdate, ':endDate' => $EndDate));
 	if($rows_affected)

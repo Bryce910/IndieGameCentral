@@ -21,11 +21,11 @@ class User
 		}
 		else
 		{
-			$user = "root";
-			$pass = "";
+			$user = "indiegamecentral";
+			$pass = "Asdf72389adlkjp!";
 
 			 global $db;
-			 $db = new PDO("mysql:host=localhost;dbname=indiegamecentral;", $user, $pass);
+			 $db = new PDO("mysql:host=indiegamecentralcom.ipagemysql.com;dbname=indie_central_2015;", $user, $pass);
 
 			$stmt = $db->prepare("SELECT * FROM user WHERE id=:id");
 			$stmt->execute(array(':id'=>$id));

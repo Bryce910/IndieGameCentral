@@ -1,10 +1,10 @@
 <?php
 include("/dbc.php");
 session_start();
-$user = "root";
-$pass = "";
+	$user = "indiegamecentral";
+	$pass = "Asdf72389adlkjp!";
 
- $db = new PDO("mysql:host=localhost;dbname=indiegamecentral;", $user, $pass);
+ $db = new PDO("mysql:host=indiegamecentralcom.ipagemysql.com;dbname=indie_central_2015;", $user, $pass);
 /* Grab Variables */
 $type = $_POST['type'];
 

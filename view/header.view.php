@@ -31,9 +31,7 @@
 				<li><a href="#conventions" class="menu">Conventions</a> </li>
 				<li><a href="#competitionTitle" class="menu">Competitions</a> </li>
 				<li><a href="#QA" class="menu">QA</a> </li>
-				<li><a href="#about" class="menu">About</a> </li>
-				<li><a href="#ex" class="menu" id="contact">Contact</a> </li>
-				<a href="indieresource.php">Resources</a>
+				<li><a href="indieresource.php">Resources</a></li>
 				<li><a href="javascript:{}" class="menu" id="login">Login</a></li>
 				<li><a href="javascript:{}" class="menu" id="register">Register</a></li>
 	<?php 	} ?>
