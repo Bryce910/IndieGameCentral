@@ -132,6 +132,11 @@ function loginUser()
 		var dataPost = $.post("classes/login.php", formData, function (data)
 		{
 					console.log(data);
+
+					window.reload():
+
+
+
 		});
 	});
 }
